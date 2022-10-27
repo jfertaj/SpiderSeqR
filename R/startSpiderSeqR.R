@@ -158,13 +158,13 @@ startSpiderSeqR <- function(path,
     print(getwd())
     print("THESE ARE THE FILES")
     print(dir())
-    print(c(file.exists(file_paths[1]), 
-            file.exists(file_paths[2]), 
-            file.exists(file_paths[3])))
+    print(c(file.exists(file_paths[[1]]), 
+            file.exists(file_paths[[2]]), 
+            file.exists(file_paths[[3]])))
     
-    sra_file <- file_paths[1]
-    geo_file <- file_paths[2]
-    srr_gsm_file <- file_paths[3]
+    sra_file <- file_paths[[1]]
+    geo_file <- file_paths[[2]]
+    srr_gsm_file <- file_paths[[3]]
     
     print(file_paths)
     
