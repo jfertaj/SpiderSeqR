@@ -170,9 +170,9 @@
     
     # Repeat missing check after extended search done
     #missing_logical <- !file.exists(file_paths)
-    missing_logical <- c(!file.exists(file_paths[1]), 
-                            !file.exists(file_paths[2]), 
-                            !file.exists(file_paths[3]))
+    missing_logical <- c(!file.exists(file_paths[[1]]), 
+                            !file.exists(file_paths[[2]]), 
+                            !file.exists(file_paths[[3]]))
     
     # Get a vector with names of missing files (in *.sqlite format)
     missing_files <- .DBNames()
